@@ -1,0 +1,11 @@
+stock_id,warehouse_id,item_name,quantity,reorder_level
+1,1,Widget A,150,50
+2,1,Widget B,30,20
+3,2,Widget C,75,30
+4,2,Widget D,10,15
+5,3,Widget E,200,100
+6,3,Widget F,5,10
+7,1,Widget G,60,25
+8,2,Widget H,0,5
+9,3,Widget I,120,60
+10,1,Widget J,45,20

@@ -13,16 +13,15 @@ import WarehouseTransfer from './components/Restock/WarehouseTransfer';
 import PredictiveRestock from './components/Restock/PredictiveRestock';
 import SearchFilter from './components/Common/SearchFilter';
 
+
 const App = () => {
   return (
     <Router>
-      <div className="flex h-screen bg-gray-100">
-        <Sidebar />
-        <div className="flex-1 flex flex-col overflow-hidden">
-          <Header />
-          <main className="flex-1 overflow-x-hidden overflow-y-auto bg-gray-100 p-4">
-            <Routes>
-              <Route path="/" element={<Overview />} />
+      <div className="app">
+        <Header />
+        <main className="container">
+          <Routes>
+          <Route path="/" element={<Overview />} />
               <Route path="/stock-alerts" element={<StockAlerts />} />
               <Route path="/charts" element={<Charts />} />
               <Route path="/stock-list" element={<StockList />} />
@@ -32,9 +31,8 @@ const App = () => {
               <Route path="/warehouse-transfer" element={<WarehouseTransfer />} />
               <Route path="/predictive-restock" element={<PredictiveRestock />} />
               <Route path="/search" element={<SearchFilter />} />
-            </Routes>
-          </main>
-        </div>
+          </Routes>
+        </main>
       </div>
     </Router>
   );

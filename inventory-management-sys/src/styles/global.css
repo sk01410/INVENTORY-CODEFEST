@@ -1,0 +1,163 @@
+.app {
+
+    min-height: 100vh;
+  
+    background-color: #f3f4f6;
+  
+  }
+  
+  
+  
+  .header {
+  
+    background-color: #ffffff;
+  
+    padding: 1rem;
+  
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  
+  }
+  
+  
+  
+  .header-container {
+  
+    max-width: 1200px;
+  
+    margin: 0 auto;
+  
+    display: flex;
+  
+    justify-content: space-between;
+  
+    align-items: center;
+  
+  }
+  
+  
+  
+  .nav-links {
+  
+    display: flex;
+  
+    gap: 2rem;
+  
+  }
+  
+  
+  
+  .nav-link {
+  
+    color: #374151;
+  
+    text-decoration: none;
+  
+  }
+  
+  
+  
+  .nav-link:hover {
+  
+    color: #1a56db;
+  
+  }
+  
+  
+  
+  .dashboard-grid {
+  
+    display: grid;
+  
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  
+    gap: 1.5rem;
+  
+    padding: 1.5rem;
+  
+    max-width: 1200px;
+  
+    margin: 0 auto;
+  
+  }
+  
+  
+  
+  .warehouse-card {
+  
+    background-color: #ffffff;
+  
+    padding: 1.5rem;
+  
+    border-radius: 0.5rem;
+  
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  
+  }
+  
+  
+  
+  .card-title {
+  
+    font-size: 1.25rem;
+  
+    font-weight: bold;
+  
+    margin-bottom: 1rem;
+  
+  }
+  
+  
+  
+  .stock-info {
+  
+    display: flex;
+  
+    justify-content: space-between;
+  
+    margin-bottom: 0.5rem;
+  
+  }
+  
+  
+  
+  .low-stock {
+  
+    color: #dc2626;
+  
+  }
+  
+  
+  
+  .button {
+  
+    background-color: #1a56db;
+  
+    color: white;
+  
+    padding: 0.5rem 1rem;
+  
+    border-radius: 0.25rem;
+  
+    border: none;
+  
+    cursor: pointer;
+  
+  }
+  
+  
+  
+  .button:hover {
+  
+    background-color: #1e40af;
+  
+  }
+  
+  
+  
+  .button:disabled {
+  
+    opacity: 0.5;
+  
+    cursor: not-allowed;
+  
+  }

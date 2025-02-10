@@ -1,15 +1,16 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
+import '../../styles.css';
 const Header = () => {
   return (
-    <header className="bg-blue-600 text-white p-4">
-      <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-2xl font-bold">Inventory Management System</h1>
-        <nav>
-          <ul className="flex space-x-4">
-            <li><a href="/dashboard">Dashboard</a></li>
-            <li><a href="/stock">Stock Management</a></li>
-            <li><a href="/restock">Restock</a></li>
+    <header className="header">
+      <div className="header-container">
+        <h1 className="header-title">Inventory Management System</h1>
+        <nav className="header-nav">
+          <ul className="nav-list">
+            <li><Link to ="/dashboard" className='nav-link'>Dashboard</Link></li>
+            <li><Link to ="/stock" className='nav-link'>Stock Management</Link></li>
+            <li><Link to ="/restock" className='nav-link'>Restock</Link></li>
           </ul>
         </nav>
       </div>
